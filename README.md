@@ -142,6 +142,10 @@ Adding a new algorithm is incredibly straightforward thanks to the decoupled Gen
 4. Open `http://localhost:5173` in your browser.
 
 ---
+## 🚀 Live Demo
+[Click Here to View Live Project](https://algo-visualizer-orcin-six.vercel.app/)
+
+---
 
 ## 🔮 Future Roadmap
 - [ ] **Graph Algorithms**: Adding a 3D Node/Edge graph mode for Dijkstra's, A*, and BFS/DFS.
