@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    margin: 0;
+    overflow: hidden;
+    font-family: sans-serif;
+    color: white;
+    background: radial-gradient(circle at 50% 50%, #1f2937 0%, #111827 50%, #030712 100%);
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+  }
+  
+  .glass-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.75rem;
+    transition: all 0.2s;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .glass-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .glass-button:active {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .glass-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .glass-input {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.75rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  .glass-input:focus {
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+/* Custom Scrollbar for sleek UI */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2); 
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2); 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4); 
+}
